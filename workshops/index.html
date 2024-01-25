@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link id='favicon' rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-png">
+    <title>Workshops | Ashad Ullah Qureshi</title>
+</head>
+<body oncontextmenu="return false">
+
+<!-- navbar starts -->
+<header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> Jigar</a>
+
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+          <ul>
+            <li><a class="active" href="/#home">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#education">Education</a></li>
+            <li><a href="/#experience">Experience</a></li>
+            <li><a href="/#publication">publications</a></li>
+            <li><a href="/#workshops">Workshops</a></li>
+            <li><a href="/#lectures">Lectures</a></li>
+            <li><a href="/#contact">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- navbar ends -->
+
+<!-- work project section starts -->
+<style>
+  /* Importing Google font - Open Sans */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+  
+  
+  
+  
+  .card-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      max-width: 1250px;
+      
+      padding: 20px;
+      gap: 20px;
+  }
+  
+  .card-list .card-item {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
+      list-style: none;
+      cursor: pointer;
+      text-decoration: none;
+      border: 2px solid transparent;
+      transition: border 0.5s ease;
+  }
+  
+  .card-list .card-item:hover {
+      border: 2px solid #000;
+  }
+  
+  .card-list .card-item img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 8px;
+      object-fit: cover;
+  }
+  
+  .card-list span {
+      display: inline-block;
+      background: #F7DFF5;
+      margin-top: 10px;
+      padding: 8px 15px;
+      font-size: 1rem;
+      border-radius: 50px;
+      font-weight: 600;
+  }
+  
+  .card-list .developer {
+      background-color: #F7DFF5; 
+      color: #B22485;
+  }   
+  
+  .card-list .designer {
+      background-color: #d1e8ff;
+      color: #2968a8;
+  }
+  
+  .card-list .editor {
+      background-color: #d6f8d6; 
+      color: #205c20;
+  }
+  
+  .card-item h3 {
+      color: #000;
+      font-size: 1.438rem;
+      margin-top: 10px;
+      font-weight: 600;
+  }
+  
+  .card-item .develope{
+    color: #B22485;
+    font-size: 1.238rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  .card-item .developr{
+    color: #2424b2;
+    font-size: 1.138rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  
+  .card-item .designe{
+    color: #2968a8;
+    font-size: 1.238rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  .card-item .designr{
+    color: #2424b2;
+    font-size: 1.138rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  .card-item .edito{
+    color: #205c20;
+    font-size: 1.238rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  .card-item .editr{
+    color: #2424b2;
+    font-size: 1.138rem;
+      margin-top: 2px;
+      font-weight: 600;
+  }
+  
+  
+  .card-item .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(-35deg);
+      height: 40px;
+      width: 40px;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 50%;
+      margin-top: 40px;
+      transition: 0.2s ease;
+  }
+  
+  .card-list .card-item:hover .arrow  {
+      background: #000;
+      color: #fff; 
+  }
+  
+  @media (max-width: 1200px) {
+      .card-list .card-item {
+          padding: 15px;
+      }
+  }
+  
+  @media screen and (max-width: 980px) {
+      .card-list {
+          margin: 0 auto;
+      }
+  }
+  
+  
+  @media screen and (max-width: 326px) {
+      .card-list {
+          margin: -30px;
+      }
+      .card-list span {
+      display: inline-block;
+      background: #F7DFF5;
+      margin-top: 10px;
+      padding: 8px 15px;
+      font-size: 0.75rem;
+      border-radius: 50px;
+      font-weight: 600;
+  }
+  }
+  </style>
+ <section class="workshops" id="workshops" style="background: #e5ecfb; margin-top:5rem;">
+
+  <h2 class="heading"><i class="fas fa-laptop-code"></i> workshops <span>Delivered</span></h2><br>
+
+<div class="card-list">
+  <a href="#" class="card-item">
+      <span class="editor">National Conferences/Workshops</span>
+      <h3>Network Security</h3>
+      <h4 class="edito">Oriental Institute of Science & Technology, Bhopal</h4>
+      <h5 class="editr">17-19 October 2008</h5>
+     
+  </a>
+  <a href="#" class="card-item">
+    <span class="editor">National Conferences/Workshops</span>
+    <h3>Artificial Intelligence in Intrusion Detection Systems</h3>
+    <h4 class="edito">National Level Technical Festival Tech-Acme, OIST, Bhopal</h4>
+    <h5 class="editr">2008</h5>
+   
+</a>
+  
+
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Network Security</h3>
+  <h4 class="edito">Thakral College of Technology, Bhopal</h4>
+  <h5 class="editr">22-23 September 2008 </h5>
+ 
+</a>
+
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Innovative Business Ideas</h3>
+  <h4 class="edito">SAMAGAM at People's Institute of Management & Research, Bhopal</h4>
+  <h5 class="editr">4-5 February 2010</h5>
+ 
+</a>
+
+
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Very Large Scale Integration</h3>
+  <h4 class="edito">CITRONICS at CITM & CITR, Indore</h4>
+  <h5 class="editr">8-10 March 2010</h5>
+ 
+</a>
+
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Emerging Trends in Software Technology</h3>
+  <h4 class="edito">CITRONICS at CITM & CITR, Indore</h4>
+  <h5 class="editr">17-19 October 2008</h5>
+ 
+</a>
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Effective Teaching Methodologies</h3>
+  <h4 class="edito">Thakral College of Technology, Bhopal</h4>
+  <h5 class="editr">22-23 September 2008 </h5>
+ 
+</a>
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Problems of Adolescence</h3>
+  <h4 class="edito">Mahar Regiment Center Auditorium, Sagar</h4>
+  <h5 class="editr">15 June 2014</h5>
+ 
+</a>
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Teachers Training Capacity Building Program</h3>
+  <h4 class="edito">Gwalior Management Association</h4>
+  <h5 class="editr">6 November 2014</h5>
+ 
+</a>
+
+<a href="#" class="card-item">
+  <span class="editor">National Conferences/Workshops</span>
+  <h3>Networking of Signal Officers </h3>
+  <h4 class="edito">Mahar Regiment Center Auditorium, Sagar</h4>
+  <h5 class="editr">15 June 2014</h5>
+ 
+</a>
+
+</div>
+
+<div class="morebtn">
+  <a href="/#workshops" class="btn"><span>Back to Home</span>
+    <i class="fas fa-arrow-right"></i>
+</a>
+</div>
+
+</section>
+<!-- work project section ends -->
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>Ashad's Portfolio</h3>
+          <p>Thank you for visiting my Academic portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀.</p>
+      </div>
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+          <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+          <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+          <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+          <a href="#publication"><i class="fas fa-chevron-circle-right"></i> Publication</a>
+          <a href="#workshops"><i class="fas fa-chevron-circle-right"></i> Workshops</a>
+          <a href="#lectures"><i class="fas fa-chevron-circle-right"></i> lectures</a>
+          <a href="#contact"><i class="fas fa-chevron-circle-right"></i> contact</a>
+          
+      </div>
+
+      <div class="box">
+          <h3>contact info</h3>
+          <p> <i class="fas fa-phone"></i>+91 6260-651-575</p>
+          <p> <i class="fas fa-envelope"></i>aqureshi@nitkkr.ac.in</p>
+          <p> <i class="fas fa-map-marked-alt"></i>NIT Kurukshetra, India</p>
+          <div class="share">
+
+              <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href="#" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+              <a href="mailto:aqureshi@nitkkr.ac.in" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+              <a href="#" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+              <a href="#" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+          </div>
+      </div>
+  </div>
+
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/dalmiaritwik"> Ritwik Dalmia</a></h1>
+
+</section>
+<!-- scroll top btn -->
+<a href="#work" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- scroll back to top -->
+
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- vanilla tilt.js links -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- scroll reveal anim -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- isotope filter plugin cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+<script src="./script.js"></script>
+
+</body>
+</html>
